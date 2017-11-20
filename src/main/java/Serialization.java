@@ -15,6 +15,7 @@ import model.Doctor;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -53,21 +54,35 @@ public class Serialization {
     }
 
     public <T> List<T> deserializeFromXml(String fileName, Class<T> tClass) throws IOException {
-        CollectionType listType = xmlMapper.getTypeFactory().
-                constructCollectionType(List.class, tClass);
-        InputStream inputStream = Serialization.class.getClassLoader().
-                getResourceAsStream(fileName);
-        List<T> res = xmlMapper.readValue(inputStream, listType);
-        return res;
+        List<T> res;
+        try {
+            CollectionType listType = xmlMapper.getTypeFactory().
+                    constructCollectionType(List.class, tClass);
+            InputStream inputStream = Serialization.class.getClassLoader().
+                    getResourceAsStream(fileName);
+            res = xmlMapper.readValue(inputStream, listType);
+            return res;
+        } catch (Throwable exc) {
+            System.out.println("Niepoprawny format pliku xml lub brak pliku" + exc);
+            res = new ArrayList<T>();
+            return res;
+        }
     }
 
     public <T> List<T> deserializeFromJson(String fileName, Class<T> tClass) throws IOException {
-        CollectionType listType = jsonMapper.getTypeFactory().
-                constructCollectionType(List.class, tClass);
-        InputStream inputStream = Serialization.class.getClassLoader().
-                getResourceAsStream(fileName);
-        List<T> res = jsonMapper.readValue(inputStream, listType);
-        return res;
+        List<T> res;
+        try {
+            CollectionType listType = jsonMapper.getTypeFactory().
+                    constructCollectionType(List.class, tClass);
+            InputStream inputStream = Serialization.class.getClassLoader().
+                    getResourceAsStream(fileName);
+            res = jsonMapper.readValue(inputStream, listType);
+            return res;
+        } catch (Throwable exc) {
+            System.out.println("Niepoprawny format pliku json lub brak pliku" + exc);
+            res = new ArrayList<T>();
+            return res;
+        }
     }
 
 }
