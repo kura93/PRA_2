@@ -1,0 +1,56 @@
+<ArrayList>
+  <item>
+    <refId>1</refId>
+    <id>5</id>
+    <name>Jan</name>
+    <surname>Kowalski</surname>
+    <specialization>Neurolog</specialization>
+    <patients>
+      <patients>
+        <refId>1</refId>
+        <id>7</id>
+        <name>Patient1</name>
+        <surname>Pat1</surname>
+        <birth_day>Mon Nov 20 22:50:49 CET 2017</birth_day>
+        <doctors>
+          <doctors>1</doctors>
+        </doctors>
+        <address>
+          <city>City2</city>
+          <street>Street2</street>
+          <homeNumber>36</homeNumber>
+          <zipcode>60-876</zipcode>
+        </address>
+      </patients>
+      <patients>
+        <refId>2</refId>
+        <id>8</id>
+        <name>Patient2</name>
+        <surname>Pat2</surname>
+        <birth_day>Mon Nov 20 22:50:49 CET 2017</birth_day>
+        <doctors>
+          <doctors>1</doctors>
+          <doctors>
+            <refId>2</refId>
+            <id>6</id>
+            <name>Matesz</name>
+            <surname>Mateusz</surname>
+            <specialization>Ortopeda</specialization>
+            <patients>
+              <patients>2</patients>
+            </patients>
+            <address/>
+          </doctors>
+        </doctors>
+        <address>
+          <city>City3</city>
+          <street>Street3</street>
+          <homeNumber>36</homeNumber>
+          <zipcode>60-876</zipcode>
+        </address>
+      </patients>
+    </patients>
+    <address/>
+  </item>
+  <item>2</item>
+</ArrayList>

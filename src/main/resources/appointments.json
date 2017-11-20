@@ -1,0 +1,109 @@
+[ {
+  "id" : 11,
+  "doctor" : {
+    "refId" : 1,
+    "id" : 5,
+    "name" : "Jan",
+    "surname" : "Kowalski",
+    "specialization" : "Neurolog",
+    "patients" : [ {
+      "refId" : 1,
+      "id" : 7,
+      "name" : "Patient1",
+      "surname" : "Pat1",
+      "birth_day" : "Mon Nov 20 22:50:49 CET 2017",
+      "doctors" : [ 1 ],
+      "address" : {
+        "city" : "City2",
+        "street" : "Street2",
+        "homeNumber" : 36,
+        "zipcode" : "60-876"
+      }
+    }, {
+      "refId" : 2,
+      "id" : 8,
+      "name" : "Patient2",
+      "surname" : "Pat2",
+      "birth_day" : "Mon Nov 20 22:50:49 CET 2017",
+      "doctors" : [ 1, {
+        "refId" : 2,
+        "id" : 6,
+        "name" : "Matesz",
+        "surname" : "Mateusz",
+        "specialization" : "Ortopeda",
+        "patients" : [ 2 ],
+        "address" : null
+      } ],
+      "address" : {
+        "city" : "City3",
+        "street" : "Street3",
+        "homeNumber" : 36,
+        "zipcode" : "60-876"
+      }
+    } ],
+    "address" : null
+  },
+  "patient" : 1,
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 12,
+  "doctor" : 1,
+  "patient" : 2,
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 13,
+  "doctor" : 1,
+  "patient" : {
+    "refId" : 3,
+    "id" : 9,
+    "name" : "Patient3",
+    "surname" : "Pat3",
+    "birth_day" : "Mon Nov 20 22:50:49 CET 2017",
+    "doctors" : [ ],
+    "address" : {
+      "city" : "City4",
+      "street" : "Street4",
+      "homeNumber" : 36,
+      "zipcode" : "60-876"
+    }
+  },
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 14,
+  "doctor" : 1,
+  "patient" : 1,
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 15,
+  "doctor" : 2,
+  "patient" : 1,
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 16,
+  "doctor" : 2,
+  "patient" : {
+    "refId" : 4,
+    "id" : 10,
+    "name" : "Patient4",
+    "surname" : "Pat4",
+    "birth_day" : "Mon Nov 20 22:50:49 CET 2017",
+    "doctors" : [ ],
+    "address" : {
+      "city" : "City5",
+      "street" : "Street5",
+      "homeNumber" : 36,
+      "zipcode" : "60-876"
+    }
+  },
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 17,
+  "doctor" : 2,
+  "patient" : 3,
+  "date" : "2017-11-20T21:50:49.186+0000"
+}, {
+  "id" : 18,
+  "doctor" : 2,
+  "patient" : 4,
+  "date" : "2017-11-20T21:50:49.186+0000"
+} ]
